@@ -1,0 +1,21 @@
+/* miniprogram/pages/propertyPage/propertyPage.wxss */
+.page{height:100%}
+.weui-label{width:4.1em}
+
+
+
+/* 联想下拉框 */
+.Association{
+  /* margin-left: 50rpx;*/
+  border: 1px solid #ddd;
+  padding-left:  30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 10rpx;
+  padding-right: 100rpx;
+  font-size:large;
+  color: #888888;
+}
+.weui-input__MediumPlaceholder{
+  font-size:32rpx;
+  color: var(--weui-FG-2) 
+}

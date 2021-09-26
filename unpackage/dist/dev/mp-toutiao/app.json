@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/taskPage/taskPage",
+    "pages/propertyPage/propertyPage",
+    "pages/taskList/taskList"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "制程通(LM)",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "backgroundColor": "#EDEDED"
+  },
+  "usingComponents": {}
+}

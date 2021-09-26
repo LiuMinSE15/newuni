@@ -1,0 +1,119 @@
+<template>
+	<view class="page">
+		<view class="page__hd">
+			<view class="page__title">任务</view>
+			<view class="page__desc">通过发布、分发实现任务的创建编辑、发布到任务市场或分发给微信好友。通过我的任务栏查询我负责的交付任务。通过任务海报和任务地图查询，申请公开任务。</view>
+		</view>
+
+
+		<view>
+			<view class="weui-cells__title">交付任务分类</view>
+			<view class="weui-cells" @tap="onOpenEditPMCOIList">
+				<view class="weui-cell weui-cell_active weui-cell_access">
+					<view class="weui-cell__hd" style="position: relative; margin-right: 10px;">
+						<image src="/static/images/icon/YourPI.png" style="width: 25px;height: 25px; display: block;">
+				
+						</image>
+					</view>
+					<view class="weui-cell__bd">
+						<text style="vertical-align: middle;">发布任务</text>
+					</view>
+					<view class="weui-cell__ft" style="font-size: 0;">
+					</view>
+				</view>
+			</view>
+
+			<view class="weui-cells">
+				<view class="weui-cell weui-cell_active weui-cell_access">
+					<view class="weui-cell__hd" style="position: relative; margin-right: 10px;">
+						<image src="/static/images/icon/MyPI.png" style="width: 25px;height: 25px; display: block;">
+						</image>
+					</view>
+					<view class="weui-cell__bd">
+						<text style="vertical-align: middle;">执行任务</text>
+					</view>
+					<view class="weui-cell__ft" style="font-size: 0;">
+					</view>
+				</view>
+			</view>
+
+			<view class="weui-cells">
+				<view class="weui-cell weui-cell_active weui-cell_access">
+					<view class="weui-cell__hd" style="position: relative; margin-right: 10px;">
+						<image src="/static/images/icon/MarketPI.png" style="width: 25px;height: 25px; display: block;">
+						</image>
+					</view>
+					<view class="weui-cell__bd">
+						<text style="vertical-align: middle;">任务地图</text>
+					</view>
+					<view class="weui-cell__ft" style="font-size: 0;">
+					</view>
+				</view>
+			</view>
+
+			<view class="weui-cells">
+				<view class="weui-cell weui-cell_active weui-cell_access">
+
+					<view class="weui-cell__hd" style="position: relative; margin-right: 10px;">
+						<image src="/static/images/icon/guanggao.png" style="width: 25px;height: 25px; display: block;">
+						</image>
+					</view>
+
+					<view class="weui-cell__bd">
+						<text style="vertical-align: middle;">任务海报</text>
+
+					</view>
+					<view class="weui-cell__ft" style="font-size: 0;">
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="weui-tab" style="height:120rpx;">
+			<view class="weui-tabbar">
+				<view class="weui-tabbar__item weui-bar__item_on">
+					<view style="display: inline-block; position: relative;">
+						<navigator url="../taskPage/taskPage" open-type="navigate" hover-class="none" redirect>
+							<image src="/static/images/icon/MytaskSL.png" alt class="weui-tabbar__icon"></image>
+						</navigator>
+					</view>
+					<view class="weui-tabbar__label">任务</view>
+				</view>
+				<view class="weui-tabbar__item">
+					<view style="display: inline-block; position: relative;">
+						<navigator url="../mainPage/mainPage" open-type="navigate" hover-class="none" redirect>
+							<image src="/static/images/icon/MyAPP.png" alt class="weui-tabbar__icon"></image>
+						</navigator>
+					</view>
+					<view class="weui-tabbar__label">应用</view>
+				</view>
+				<view class="weui-tabbar__item">
+					<navigator url="../myPage/myPage" open-type="navigate" hover-class="none" redirect>
+						<image src="/static/images/icon/My.png" alt class="weui-tabbar__icon"></image>
+						<view class="weui-tabbar__label">我</view>
+					</navigator>
+				</view>
+				<view class="weui-tabbar__item">
+					<view style="display: inline-block; position: relative;">
+						<navigator url="../newsPage/newsPage" open-type="navigate" hover-class="none" redirect>
+							<image src="/static/images/icon/MyNEWS.png" alt class="weui-tabbar__icon"></image>
+							<view v-if="WaitSumCoun>0">
+								<text class="weui-badge"
+									style="position: absolute; top: -0.4em; right: -0.4em;">{{WaitSumCoun}}</text>
+							</view>
+						</navigator>
+					</view>
+					<view class="weui-tabbar__label">消息</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script src="./taskPage.js">
+	
+</script>
+
+<style src="./taskPage.css">
+	
+</style>

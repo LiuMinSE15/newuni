@@ -1,0 +1,2 @@
+	const pmJSTools = require("../../utils/pmJSTools.js");	const pmSerTools = require("../../utils/pmSerTools.js");	var app = getApp();		export default {		data() {			return {				WaitSumCoun: "",				topTips: false,				topTipsStr: ""			};		},		components: {				},		props: {},				onLoad: function(options) {		},			methods: {				async onOpenEditPMCOIList() {				uni.navigateTo({
+					///和韩国国会					url: '../taskList/taskList',					success: res => {},					fail: () => {},					complete: () => {}				});			},		}	};
